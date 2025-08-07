@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="file1.js"></script>
+    <script src="file1.js" defer></script>
+    <style>
+            * {
+                 margin: 0;
+                 padding: 0;
+                 box-sizing: border-box;
+                }
+        body{
+            background-color: #a1a1a1;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        div{
+            border: 1px solid red;
+            padding:20px;
+            margin:20px;
+            width:400px;
+        }
+        .buttons{
+            display: flex;
+            align-items:center;
+        
+            justify-content: space-between;
+            
+
+        }
+        button{
+            padding:5px 15px;
+            margin:5px;
+            width:100px;
+            background-color: black;
+            color:#a1a1a1;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  color: #eee;
+}
+    </style>
 </head>
 <body>
+    <section class="main">
+
     
+    <h1>Rock Paper Scissor</h1>
+    <div class="buttons">
+        <button id="button1">Rock</button>
+        <button id="button2">Paper</button>
+        <button id="button3">Scissor</button>
+    </div>
+    <div id="container">
+        
+    </div>
+     <div id="subcontainer">
+        
+    </div>
+
+    <div id="score">
+
+    </div>
+    <div id="counter">
+    </section>    
+    </div>
 </body>
 </html>
